@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Search Options</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <h1>Google Search with Options</h1>
+      <form action="https://www.google.com/search" method="GET">
+        <label for="search_query">Search Query:</label>
+        <input type="text" id="search_query" name="q" required><br><br>
+
+        <label for="exclude_personal">Exclude Personal Results:</label>
+        <input type="checkbox" id="exclude_personal" name="pws"><br><br>
+
+        <label>File Type:</label>
+        <input type="radio" id="file_type_any" name="as_filetype" value="">Any
+        <input type="radio" id="file_type_pdf" name="as_filetype" value="pdf">PDF
+        <input type="radio" id="file_type_doc" name="as_filetype" value="doc">Word Docs<br><br>
+
+        <label for="language">Language:</label>
+        <select id="language" name="lr">
+            <option value="lang_en">English</option>
+            <option value="lang_fr">French</option>
+            <option value="lang_es">Spanish</option>
+            
+        </select><br><br>
+
+        <label for="sites">Search Within Sites:</label>
+        <input type="text" id="sites" name="as_sitesearch"><br><br>
+
+        <label for="search_results">Number of Results:</label>
+        <select id="search_results" name="num">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            
+        </select><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="pw"><br><br>
+
+        <fieldset>
+            <legend>Search Preferences</legend>
+            <input type="checkbox" id="pref_safe_search" name="safe" value="on">
+            <label for="pref_safe_search">Enable Safe Search</label><br>
+            
+        </fieldset><br>
+
+        <input type="submit" value="Search">
+    </form>
+    </body>
+</html>
