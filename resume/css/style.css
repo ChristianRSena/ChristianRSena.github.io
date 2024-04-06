@@ -10,6 +10,12 @@ h1, h2, h3 {
     color: #333;
 }
 
+.tower-image {
+    max-width: 400px;
+    height: auto; 
+}
+
+
 .container {
     max-width: 800px;
     margin: auto;
